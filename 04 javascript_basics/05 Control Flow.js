@@ -1,5 +1,5 @@
 var hot = false;
-var temp = 20;
+var temp = prompt("what temp is it outside?")
 
 if (temp>80) {
     alert("it is hot")
