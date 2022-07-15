@@ -15,6 +15,5 @@ if (temp>80) {
 
 if (hot == true){
     alert("var hot is true")
-}else{
-
+    console.log("var hot is true")
 }
