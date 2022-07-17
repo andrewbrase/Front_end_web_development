@@ -18,6 +18,7 @@ var count = 0;
 while (count < 5 ){
     console.log("hello");
     count += 1;
+    // count++
 }
 
 // For Loop
@@ -34,10 +35,10 @@ for (var count = 0;count < 5;count += 1){
 
 // METHOD ONE
 // While Loop
-var num = 0;
+var num = 1;
 
-while (num < 25){
-    if (num % 2 == 0){
+while (num < 26){
+    if (num % 2 !== 0){
         console.log(num);
     }
     num += 1;
@@ -46,8 +47,8 @@ while (num < 25){
 // METHOD TWO
 // For Loop
 
-for (var num = 0; num < 25;num += 1){
-    if (num % 2 == 0){
+for (var num = 1; num < 26;num += 1){
+    if (num % 2 !== 0){
         console.log(num);
     }
 }
