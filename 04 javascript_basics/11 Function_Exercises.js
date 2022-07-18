@@ -76,7 +76,7 @@ var monkey_A=true;
 var monkey_B=true;
 
 function monkeyTrouble(aSmile,bSmile){
-
+// looking throught this I didn't have to do aSmile === true because the values themselves already are true
 if ((aSmile === true && bSmile === true) || (aSmile === false && bSmile === false)){
   alert("monkey trouble");
   return true;
@@ -192,50 +192,25 @@ luckySum(a,b,c)
 // caught_speeding(65, false) → 1
 // caught_speeding(65, true) → 0
 
+var speed = 65
+var birthday = true
 
-// var speed = 65
-// var birthday = true
-
-// function caught_Speeding(speedvar,isbirthday){
-
-//   // NEED A WAY TO SIMPLIFY THIS:
-//   if (isbirthday === true){
-//     speedvar -= 5
-//     if (speedvar < 61){
-//       alert("0")
-//       return 0;
-//     }
-  
-//     if (speedvar > 60 && speedvar < 81){
-//       alert("1")
-//       return 1;
-//     }
-  
-//     if (speedvar > 80){
-//       alert("2")
-//       return 2;
-//     }
-
-//   }
-  
-//   if (speedvar < 61){
-//     alert("0")
-//     return 0;
-//   }
-
-//   if (speedvar > 60 && speedvar < 81){
-//     alert("1")
-//     return 1;
-//   }
-
-//   if (speedvar > 80){
-//     alert("2")
-//     return 2;
-//   }
-
-// }
-
-// caught_Speeding(speed,birthday)
+function caught_Speeding(speedvar,isbirthday){
+  if (isbirthday){
+    speedvar-=5
+  }
+  if (speedvar <= 60){
+    alert("0")
+    return 0;
+  }
+  if (60 < speed <= 80){
+    alert("1")
+    return 1;
+  }
+  alert("2")
+  return 2
+}
+caught_Speeding(speed,birthday)
 
 // BONUS: MAKE BRICKS
 //
