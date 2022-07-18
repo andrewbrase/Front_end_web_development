@@ -23,41 +23,35 @@
 // sleepIn(true, false) → false
 // sleepIn(false, true) → true
 
-
-
-
-
-
-
-// var week_day = true;
-// var on_vac = false;
-
-// function sleepIn(weekday,vacation){
-
-//   // if it's the weekend or you're on vacation - you can sleep in
-//   if (weekday === false || vacation === true){
-//     // 
-//     // alert is only for me to visually see, not part of problem
-//     alert("sleep in");
-//     return true;
-//   }
-  
-//   // if it is a weekday (and the previous if statement didn't execute due to vacation being false) - you have to work
-//   if (weekday === true){
-//     alert("work");
-//     return false;
-//   }
-
-//   // if your vacation is on a weekday you can still sleep in
+// SOLUTION
+// function sleepIn(weekday, vacation){
+//   // these are already boolean values
+//   return (!weekday || vacation)
 // }
 
-// sleepIn(week_day,on_vac);
+var week_day = true;
+var on_vac = true;
 
+function sleepIn(weekday,vacation){
 
+  // if it's the weekend or you're on vacation - you can sleep in
+  if (weekday === false || vacation === true){
+    // 
+    // alert is only for me to visually see, not part of problem
+    alert("sleep in");
+    return true;
+  }
+  
+  // if it is a weekday (and the previous if statement didn't execute due to vacation being false) - you have to work
+  if (weekday === true){
+    alert("work");
+    return false;
+  }
+  // if your vacation is on a weekday you can still sleep in
 
+}
 
-
-
+sleepIn(week_day,on_vac);
 
 //
 // PROBLEM 2: MONKEY TROUBLE
@@ -72,38 +66,27 @@
 // monkeyTrouble(false, false) → true
 // monkeyTrouble(true, false) → false
 
-
-
-
-
-
-
-
-
-// var monkey_A=true;
-// var monkey_B=false;
-
+// SOLUTION
 // function monkeyTrouble(aSmile,bSmile){
-
-// if ((aSmile === true && bSmile === true) || (aSmile === false && bSmile === false)){
-//   alert("monkey trouble");
-//   return true;
-// }else{
-//   alert("no monkey trouble");
+//   //  returns (true) if aSmile and bSmile are true or --> !(false) !(false)
+//   return (aSimle && bSmile) || (!aSmile && !bSmile)
 // }
 
-// }
+var monkey_A=true;
+var monkey_B=true;
 
-// monkeyTrouble(monkey_A,monkey_B);
+function monkeyTrouble(aSmile,bSmile){
 
+if ((aSmile === true && bSmile === true) || (aSmile === false && bSmile === false)){
+  alert("monkey trouble");
+  return true;
+}else{
+  alert("no monkey trouble");
+}
 
+}
 
-
-
-
-
-
-
+monkeyTrouble(monkey_A,monkey_B);
 
 //
 // PROBLEM 3: STRING TIMES
@@ -117,15 +100,26 @@
 // stringTimes("Hi", 3) → "HiHiHi"
 // stringTimes("Hi", 1) → "Hi"
 
-// var str = "Hi";
-// var num = 2;
-
-// function stringTimes(word,number){
-//   alert(word.repeat(number));
-//   return (word.repeat(number));
+// SOLUTION
+// function stringTimes(str,n){
+//   var returnStr = "";
+//   var i = 0;
+//   while (i < n){
+//     returnStr += str;
+//     i++
+//   }
+//   return returnStr
 // }
 
-// stringTimes(str,num)
+var str = "Hi";
+var num = 3;
+
+function stringTimes(word,number){
+  alert(word.repeat(number));
+  return (word.repeat(number));
+}
+
+stringTimes(str,num)
 
 // PROBLEM 4: LUCKY SUM
 
@@ -141,22 +135,10 @@
 // luckySum(1, 2, 13) → 3
 // luckySum(1, 13, 3) → 1
 
-// help
 
-// var a = 1;
-// var b = 2;
-// var c = 13;
 
-// function luckySum(num_one,num_two,num_three){
 
-// if (num_one !== 13 && num_two !== 13 && num_three !== 13){
-//   alert(num_one+ num_two+ num_three);
-//   return (num_one+ num_two+ num_three);
-// }
 
-// }
-
-// luckySum(a,b,c);
 
 
 // PROBLEM 5:
@@ -174,49 +156,49 @@
 // caught_speeding(65, true) → 0
 
 
-var speed = 65
-var birthday = true
+// var speed = 65
+// var birthday = true
 
-function caught_Speeding(speedvar,isbirthday){
+// function caught_Speeding(speedvar,isbirthday){
 
-  // NEED A WAY TO SIMPLIFY THIS:
-  if (isbirthday === true){
-    speedvar -= 5
-    if (speedvar < 61){
-      alert("0")
-      return 0;
-    }
+//   // NEED A WAY TO SIMPLIFY THIS:
+//   if (isbirthday === true){
+//     speedvar -= 5
+//     if (speedvar < 61){
+//       alert("0")
+//       return 0;
+//     }
   
-    if (speedvar > 60 && speedvar < 81){
-      alert("1")
-      return 1;
-    }
+//     if (speedvar > 60 && speedvar < 81){
+//       alert("1")
+//       return 1;
+//     }
   
-    if (speedvar > 80){
-      alert("2")
-      return 2;
-    }
+//     if (speedvar > 80){
+//       alert("2")
+//       return 2;
+//     }
 
-  }
+//   }
   
-  if (speedvar < 61){
-    alert("0")
-    return 0;
-  }
+//   if (speedvar < 61){
+//     alert("0")
+//     return 0;
+//   }
 
-  if (speedvar > 60 && speedvar < 81){
-    alert("1")
-    return 1;
-  }
+//   if (speedvar > 60 && speedvar < 81){
+//     alert("1")
+//     return 1;
+//   }
 
-  if (speedvar > 80){
-    alert("2")
-    return 2;
-  }
+//   if (speedvar > 80){
+//     alert("2")
+//     return 2;
+//   }
 
-}
+// }
 
-caught_Speeding(speed,birthday)
+// caught_Speeding(speed,birthday)
 
 // BONUS: MAKE BRICKS
 //
