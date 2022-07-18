@@ -136,10 +136,47 @@ stringTimes(str,num)
 // luckySum(1, 13, 3) → 1
 
 
+// A bunch of if statements way :
+// var a= 1;
+// var b= 2;
+// var c= 13;
 
+// function luckySum(a,b,c){
+//   if (a === 13){
+//     return 0;
+//   }
+//   if (b === 13){
+//     return a;
+//   }
+//   if (c === 13){
+//     return a + b;
+//   }
+//   return a+b+c;
+// }
 
+// luckySum(a,b,c)
 
+var a= 1;
+var b= 2;
+var c= 13;
 
+function luckySum(a,b,c){
+  if (a === 13){
+    alert("0")
+    return 0;
+  }else if (b === 13){
+    alert(a)
+    return a;
+  }else if (c === 13){
+    alert(a+b)
+    return a+b;
+  }else{
+    alert(a+b+c)
+    return a+b+c;
+  }
+}
+
+luckySum(a,b,c)
 
 // PROBLEM 5:
 //
