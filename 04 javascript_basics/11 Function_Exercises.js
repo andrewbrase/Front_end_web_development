@@ -113,6 +113,22 @@ stringTimes(str,num)
 // luckySum(1, 2, 13) → 3
 // luckySum(1, 13, 3) → 1
 
+// help
+
+// var a = 1;
+// var b = 2;
+// var c = 13;
+
+// function luckySum(num_one,num_two,num_three){
+
+// if (num_one !== 13 && num_two !== 13 && num_three !== 13){
+//   alert(num_one+ num_two+ num_three);
+//   return (num_one+ num_two+ num_three);
+// }
+
+// }
+
+// luckySum(a,b,c);
 
 
 // PROBLEM 5:
@@ -128,6 +144,8 @@ stringTimes(str,num)
 // caught_speeding(60, false) → 0
 // caught_speeding(65, false) → 1
 // caught_speeding(65, true) → 0
+
+
 
 
 
