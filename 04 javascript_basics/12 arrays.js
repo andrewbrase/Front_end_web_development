@@ -47,7 +47,7 @@ myArr.push("four");
 
 // how to index last item in array
 var lastItemIn= myArr[myArr.length - 1];
-alert(lastItemIn)
+alert(lastItemIn);
 // ---> "four"
 
 // array iteration
@@ -61,3 +61,20 @@ alert(lastItemIn)
 for(letter of myArr){
     console.log(letter);
 }
+// VS PYTHON
+// for x in cars:
+//   print(x)
+
+// how to pass each item in an array into a function
+
+// for (letter of myArr){
+//     alert(letter);
+
+// }
+
+// For Each method
+// do not call function alert() -> just alert
+myArr.forEach(alert);
+
+// like pythons map() method
+// calling a function for every element in the array
