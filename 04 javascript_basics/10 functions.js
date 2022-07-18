@@ -22,3 +22,22 @@ function helloSomeone(name="default name"){
 }
 
 helloSomeone()
+
+// returning values
+
+function formal(name="andrew",title="sir"){
+    alert(title + " " + name)
+}
+
+formal()
+
+// "welcome" + formal() --> undefined
+// the function isn't actually returning anything - 
+// it needs to return something if you want to assign 
+// it to a variable
+
+function returnFormal(name="andrew",title="sir"){
+    return(title + " " + name)
+}
+
+alert("welcome " + returnFormal())
