@@ -84,7 +84,9 @@ myArr.forEach(alert);
 // JS
 // The push() method adds a new element to an array (at the end):
 // The pop() method removes the last element from an array:
+// arr.forEach(ex. alert) method calls a function for each element in an array.
 
 // PY 
 // append (item): This method is used to add new element at the end of the list.
 // pop (index): The method is used to remove item from the list based on index value.
+// The map() function executes a specified function for each item in an iterable. The item is sent to the function as a parameter.
