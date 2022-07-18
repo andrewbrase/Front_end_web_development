@@ -36,6 +36,9 @@ formal()
 // it needs to return something if you want to assign 
 // it to a variable
 
+// all the function was doing before was alerting -
+//  not returning a value to be used again
+
 function returnFormal(name="andrew",title="sir"){
     return(title + " " + name)
 }
