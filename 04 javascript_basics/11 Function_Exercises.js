@@ -30,6 +30,8 @@ function sleepIn(weekday,vacation){
 
   // if it's the weekend or you're on vacation - you can sleep in
   if (weekday === false || vacation === true){
+    // 
+    // alert is only for me to visually see, not part of problem
     alert("sleep in");
     return true;
   }
@@ -87,7 +89,15 @@ monkeyTrouble(monkey_A,monkey_B);
 // stringTimes("Hi", 3) → "HiHiHi"
 // stringTimes("Hi", 1) → "Hi"
 
+var str = "Hi";
+var num = 2;
 
+function stringTimes(word,number){
+  alert(word.repeat(number));
+  return (word.repeat(number));
+}
+
+stringTimes(str,num)
 
 // PROBLEM 4: LUCKY SUM
 
