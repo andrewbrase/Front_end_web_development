@@ -23,10 +23,27 @@
 // sleepIn(true, false) → false
 // sleepIn(false, true) → true
 
-function sleepIn(weekday, vacation) {
-    //Code Goes Here
+week_day = true
+on_vac = false
+
+function sleepIn(weekday,vacation){
+
+  // if it's the weekend or you're on vacation - you can sleep in
+  if (weekday === false || vacation === true){
+    alert("sleep in")
+    return true;
+  }
+  
+  // if it is a weekday (and the previous if statement didn't execute due to vacation being false) - you have to work
+  if (weekday === true){
+    alert("work")
+    return false;
+  }
+
+  // if your vacation is on a weekday you can still sleep in
 }
 
+sleepIn(week_day,on_vac)
 
 //
 // PROBLEM 2: MONKEY TROUBLE
@@ -41,9 +58,7 @@ function sleepIn(weekday, vacation) {
 // monkeyTrouble(false, false) → true
 // monkeyTrouble(true, false) → false
 
-function monkeyTrouble(aSmile, bSmile) {
-    //Code Goes Here
-}
+
 
 
 //
@@ -58,9 +73,7 @@ function monkeyTrouble(aSmile, bSmile) {
 // stringTimes("Hi", 3) → "HiHiHi"
 // stringTimes("Hi", 1) → "Hi"
 
-function stringTimes(str, n) {
-    //Code Goes Here
-}
+
 
 // PROBLEM 4: LUCKY SUM
 
@@ -76,10 +89,7 @@ function stringTimes(str, n) {
 // luckySum(1, 2, 13) → 3
 // luckySum(1, 13, 3) → 1
 
-function luckySum(a, b, c){
 
-  //Code Goes Here
-}
 
 // PROBLEM 5:
 //
@@ -95,9 +105,6 @@ function luckySum(a, b, c){
 // caught_speeding(65, false) → 1
 // caught_speeding(65, true) → 0
 
-function caught_speeding(speed, is_birthday){
-  //Code Goes Here
-}
 
 
 // BONUS: MAKE BRICKS
@@ -113,6 +120,3 @@ function caught_speeding(speed, is_birthday){
 // makeBricks(3, 1, 9) → false
 // makeBricks(3, 2, 10) → true
 
-function makeBricks(small, big, goal){
-  //Code Goes Here
-}
