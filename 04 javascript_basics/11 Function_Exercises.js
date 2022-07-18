@@ -23,29 +23,41 @@
 // sleepIn(true, false) → false
 // sleepIn(false, true) → true
 
-var week_day = true;
-var on_vac = false;
 
-function sleepIn(weekday,vacation){
 
-  // if it's the weekend or you're on vacation - you can sleep in
-  if (weekday === false || vacation === true){
-    // 
-    // alert is only for me to visually see, not part of problem
-    alert("sleep in");
-    return true;
-  }
+
+
+
+
+// var week_day = true;
+// var on_vac = false;
+
+// function sleepIn(weekday,vacation){
+
+//   // if it's the weekend or you're on vacation - you can sleep in
+//   if (weekday === false || vacation === true){
+//     // 
+//     // alert is only for me to visually see, not part of problem
+//     alert("sleep in");
+//     return true;
+//   }
   
-  // if it is a weekday (and the previous if statement didn't execute due to vacation being false) - you have to work
-  if (weekday === true){
-    alert("work");
-    return false;
-  }
+//   // if it is a weekday (and the previous if statement didn't execute due to vacation being false) - you have to work
+//   if (weekday === true){
+//     alert("work");
+//     return false;
+//   }
 
-  // if your vacation is on a weekday you can still sleep in
-}
+//   // if your vacation is on a weekday you can still sleep in
+// }
 
-sleepIn(week_day,on_vac);
+// sleepIn(week_day,on_vac);
+
+
+
+
+
+
 
 //
 // PROBLEM 2: MONKEY TROUBLE
@@ -61,21 +73,37 @@ sleepIn(week_day,on_vac);
 // monkeyTrouble(true, false) → false
 
 
-var monkey_A=true;
-var monkey_B=false;
 
-function monkeyTrouble(aSmile,bSmile){
 
-if ((aSmile === true && bSmile === true) || (aSmile === false && bSmile === false)){
-  alert("monkey trouble");
-  return true;
-}else{
-  alert("no monkey trouble");
-}
 
-}
 
-monkeyTrouble(monkey_A,monkey_B);
+
+
+
+// var monkey_A=true;
+// var monkey_B=false;
+
+// function monkeyTrouble(aSmile,bSmile){
+
+// if ((aSmile === true && bSmile === true) || (aSmile === false && bSmile === false)){
+//   alert("monkey trouble");
+//   return true;
+// }else{
+//   alert("no monkey trouble");
+// }
+
+// }
+
+// monkeyTrouble(monkey_A,monkey_B);
+
+
+
+
+
+
+
+
+
 
 //
 // PROBLEM 3: STRING TIMES
@@ -89,15 +117,15 @@ monkeyTrouble(monkey_A,monkey_B);
 // stringTimes("Hi", 3) → "HiHiHi"
 // stringTimes("Hi", 1) → "Hi"
 
-var str = "Hi";
-var num = 2;
+// var str = "Hi";
+// var num = 2;
 
-function stringTimes(word,number){
-  alert(word.repeat(number));
-  return (word.repeat(number));
-}
+// function stringTimes(word,number){
+//   alert(word.repeat(number));
+//   return (word.repeat(number));
+// }
 
-stringTimes(str,num)
+// stringTimes(str,num)
 
 // PROBLEM 4: LUCKY SUM
 
@@ -146,8 +174,49 @@ stringTimes(str,num)
 // caught_speeding(65, true) → 0
 
 
+var speed = 65
+var birthday = true
 
+function caught_Speeding(speedvar,isbirthday){
 
+  // NEED A WAY TO SIMPLIFY THIS:
+  if (isbirthday === true){
+    speedvar -= 5
+    if (speedvar < 61){
+      alert("0")
+      return 0;
+    }
+  
+    if (speedvar > 60 && speedvar < 81){
+      alert("1")
+      return 1;
+    }
+  
+    if (speedvar > 80){
+      alert("2")
+      return 2;
+    }
+
+  }
+  
+  if (speedvar < 61){
+    alert("0")
+    return 0;
+  }
+
+  if (speedvar > 60 && speedvar < 81){
+    alert("1")
+    return 1;
+  }
+
+  if (speedvar > 80){
+    alert("2")
+    return 2;
+  }
+
+}
+
+caught_Speeding(speed,birthday)
 
 // BONUS: MAKE BRICKS
 //
