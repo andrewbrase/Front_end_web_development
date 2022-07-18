@@ -48,12 +48,12 @@
 // using return within a function to return that value provided to be assigned to a var and used in another func/method
 
 function timesFive(numInput){
-    var result = numInput * 5
+    var result = numInput * 5;
     //  the result variable is only defined within this function, the res variable is defining it globally
-    return result
+    return result;
 }
 
 var res = timesFive(prompt("choose a number to multiply by 5"));
-alert(res)
+alert(res);
 
 // scope - how objects and variables are defined within JS - if a variable is only defined within a function - then its scope is only limited to that function
