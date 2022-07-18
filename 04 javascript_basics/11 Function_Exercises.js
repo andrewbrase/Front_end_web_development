@@ -23,27 +23,27 @@
 // sleepIn(true, false) → false
 // sleepIn(false, true) → true
 
-week_day = true
-on_vac = false
+var week_day = true;
+var on_vac = false;
 
 function sleepIn(weekday,vacation){
 
   // if it's the weekend or you're on vacation - you can sleep in
   if (weekday === false || vacation === true){
-    alert("sleep in")
+    alert("sleep in");
     return true;
   }
   
   // if it is a weekday (and the previous if statement didn't execute due to vacation being false) - you have to work
   if (weekday === true){
-    alert("work")
+    alert("work");
     return false;
   }
 
   // if your vacation is on a weekday you can still sleep in
 }
 
-sleepIn(week_day,on_vac)
+sleepIn(week_day,on_vac);
 
 //
 // PROBLEM 2: MONKEY TROUBLE
@@ -59,7 +59,21 @@ sleepIn(week_day,on_vac)
 // monkeyTrouble(true, false) → false
 
 
+var monkey_A=true;
+var monkey_B=false;
 
+function monkeyTrouble(aSmile,bSmile){
+
+if ((aSmile === true && bSmile === true) || (aSmile === false && bSmile === false)){
+  alert("monkey trouble");
+  return true;
+}else{
+  alert("no monkey trouble");
+}
+
+}
+
+monkeyTrouble(monkey_A,monkey_B);
 
 //
 // PROBLEM 3: STRING TIMES
