@@ -39,8 +39,11 @@ if (choice.toUpperCase() === "Y"){
 
     function removeName(name){
         var loc = roster.indexOf(name.toUpperCase())
-        roster.splice(loc,1);
-        display()
+        if (loc !== -1){
+            roster.splice(loc,1);
+            display()
+        }
+        
     }
 
     function display(){
@@ -55,7 +58,6 @@ if (choice.toUpperCase() === "Y"){
             addNew(newname)
         }
         if (action.toUpperCase() === "REMOVE" || action.toUpperCase() === "R"){
-            // need a way to use IF - because someone can type 7 and remove a name
             var ridname = prompt("please provide a name to remove")
             removeName(ridname)
         }
