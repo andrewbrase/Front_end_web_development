@@ -33,11 +33,12 @@ if (choice.toUpperCase() === "Y"){
     var roster = []
 
     function addNew(name){
-        roster.push(name)
+        roster.push(name.toUpperCase())
+        display()
     }
 
     function removeName(name){
-        var loc = roster.indexOf(name)
+        var loc = roster.indexOf(name.toUpperCase())
         roster.splice(loc,1);
         display()
     }
@@ -48,12 +49,13 @@ if (choice.toUpperCase() === "Y"){
 
     var on = true;
     while (on){
-        var action = prompt( "please select an action (add,remove, display or quit)")
+        var action = prompt( "please select an action (add, remove, display or quit)")
         if (action.toUpperCase() === "ADD" || action.toUpperCase() === "A"){
             var newname = prompt("please provide a name to add")
             addNew(newname)
         }
         if (action.toUpperCase() === "REMOVE" || action.toUpperCase() === "R"){
+            // need a way to use IF - because someone can type 7 and remove a name
             var ridname = prompt("please provide a name to remove")
             removeName(ridname)
         }
