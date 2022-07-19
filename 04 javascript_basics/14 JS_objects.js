@@ -35,7 +35,9 @@ var newJsObj = {a:"hello",b:[1,2,3],c:{inside:['a','b']}}
 //     // there is no order in objects --> sometimes the order might be different
 //     alert(key)
 for (k in carInfo){
+// grabbing keys
 console.log(k)
+// grabbing values
 console.log(carInfo[k])
 }
 // }
