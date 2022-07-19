@@ -35,6 +35,7 @@ if (choice.toUpperCase() === "Y"){
 
     function addNew(name){
         roster.push(name.toUpperCase())
+        console.log("!!! Added "+ name + " to roster")
         display()
     }
 
@@ -42,6 +43,7 @@ if (choice.toUpperCase() === "Y"){
         var loc = roster.indexOf(name.toUpperCase())
         if (loc !== -1){
             roster.splice(loc,1);
+            console.log("!!! Removed "+ name + " from roster")
             display()
         }
         
@@ -53,13 +55,15 @@ if (choice.toUpperCase() === "Y"){
 
     var on = true;
     while (on){
-        var action = prompt( "please select an action (add, remove, display or quit)")
+        var action = prompt( "Please select an action (add (a), remove (r), display (d) or quit (q))")
         if (action.toUpperCase() === "ADD" || action.toUpperCase() === "A"){
-            var newname = prompt("please provide a name to add")
+            console.log("action (add) chosen:")
+            var newname = prompt("Please provide a name to add")
             addNew(newname)
         }
         if (action.toUpperCase() === "REMOVE" || action.toUpperCase() === "R"){
-            var ridname = prompt("please provide a name to remove")
+            console.log("action (remove) chosen:")
+            var ridname = prompt("Please provide a name to remove")
             removeName(ridname)
         }
         if (action.toUpperCase() === "DISPLAY" || action.toUpperCase() === "D"){
