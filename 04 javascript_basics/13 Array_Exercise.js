@@ -27,6 +27,7 @@
 // Now create a while loop that keeps asking for an action (add,remove, display or quit)
 // Use if and else if statements to execute the correct function for each command.
 
+// decided to display console.log with every action for visibility
 var choice = prompt("Do you want to use the web app? Y or N")
 if (choice.toUpperCase() === "Y"){
     
