@@ -25,7 +25,6 @@ if (choice.toUpperCase() === "Y"){
             console.log("!!! Removed "+ name + " from roster");
             display();
         }
-        
     }
 
     // this function can be used to display the roster
