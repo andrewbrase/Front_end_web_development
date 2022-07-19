@@ -38,10 +38,8 @@ if (choice.toUpperCase() === "Y"){
 
     function removeName(name){
         var loc = roster.indexOf(name)
-        alert(loc)
-        // delete something from array using index loc
+        roster.splice(loc,1);
         display()
-
     }
 
     function display(){
