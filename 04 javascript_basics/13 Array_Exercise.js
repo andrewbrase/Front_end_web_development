@@ -44,8 +44,9 @@ if (choice.toUpperCase() === "Y"){
     }
 
     // this function is used to remove a name from the roster IF that name is in the roster 
-    // (indexOf will set the index to -1 if that name is not found) - I am using this for input validation,
-    // before I did this it was possible to type ex. 7 in an array of 3 items and it would remove the last item in the array
+    // (indexOf will set the index to -1 if that name is not found) - I am using this for input validation:
+    // if (loc !== -1){
+
     // in a normal scenario the loc (index) will correlate with the position that name is in the array
     // logs results for visibility
 
