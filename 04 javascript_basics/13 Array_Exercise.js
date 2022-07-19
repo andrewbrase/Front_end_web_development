@@ -37,7 +37,11 @@ if (choice.toUpperCase() === "Y"){
     }
 
     function removeName(name){
-        roster.splice(roster.indexOf(name),1);
+        var loc = roster.indexOf(name)
+        alert(loc)
+        // delete something from array using index loc
+        display()
+
     }
 
     function display(){
@@ -47,18 +51,18 @@ if (choice.toUpperCase() === "Y"){
     var on = true;
     while (on){
         var action = prompt( "please select an action (add,remove, display or quit)")
-        if (action.toUpperCase() === "ADD"){
+        if (action.toUpperCase() === "ADD" || action.toUpperCase() === "A"){
             var newname = prompt("please provide a name to add")
             addNew(newname)
         }
-        if (action.toUpperCase() === "REMOVE"){
+        if (action.toUpperCase() === "REMOVE" || action.toUpperCase() === "R"){
             var ridname = prompt("please provide a name to remove")
             removeName(ridname)
         }
-        if (action.toUpperCase() === "DISPLAY"){
+        if (action.toUpperCase() === "DISPLAY" || action.toUpperCase() === "D"){
             display()
         }
-        if (action.toUpperCase() === "QUIT"){
+        if (action.toUpperCase() === "QUIT" || action.toUpperCase() === "Q"){
             on = false
         }
     }
