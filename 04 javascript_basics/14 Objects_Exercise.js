@@ -55,8 +55,9 @@ var employee = {
   job: "Programmer",
   age: 31,
   lastName : function(){
-    nameList = this.name.split(" ")
-    console.log(nameList[1])
+    // nameList = this.name.split(" ")
+    // console.log(nameList[1])
+    console.log(this.name.split(" ")[1])
   }
 }
 
