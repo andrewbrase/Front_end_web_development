@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <meta charset="utf-8">
         <title>15 Document Object model</title>
         <link rel="stylesheet" href="C:\Users\brasea\Desktop\Workspace\Front_end_web_development\04 javascript_basics\15 Document_Object_model.css">
         <script src="C:\Users\brasea\Desktop\Workspace\Front_end_web_development\04 javascript_basics\15 Document_Object_model.js"></script>
+
     </head>
     <body>
+
         <h1>15 Document Object model</h1>
-        <p>In this section we will learn about the <span class="highlight">Document Object Model (DOM)</span></p>
+        <p id="pick_new">In this section we will learn about the <span class="highlight">Document Object Model (DOM)</span></p>
         <p>The DOM will allow us to interface our <span class="highlight">Javascript code to interact with HTML and CSS.</span></p>
         <P>Browsers will construct the DOM, which basically means storing all the HTML tags as <span class="highlight">Javascript objects</span></P>
 
@@ -26,6 +29,23 @@
         <!-- document.getElementsByTagName() - returns all elements of a certain tag ex. <a> -->
         <!-- document.querySelector() - returns the first object matching the css style selector -->
         <!-- document.querySelectorAll() - returns all of the objects matching the css style selector-->
+
+        <p id="pick me">document.getElementsByClassName("highlight")</p>
+        <p>document.getElementById("pick me")</p>
+
+        <ul id="ul">new ul
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>
+        </ul>
+
+        <p>document.getElementById("ul")</p>
+        <p>document.getElementsByTagName("li") ---> HTMLCollection(3) [li, li, li]</p>
+
+        <p>document.querySelector("#pick_new")</p>
+        <p class="highlight">document.querySelectorAll("li")</p>
+        <br>
+        <p class="highlight">document.querySelectorAll(".highlight") == document.getElementsByClassName("highlight")</p>
 
     </body>
 </html>
