@@ -22,7 +22,7 @@ headTwo.addEventListener("click",function(){
 function changeBluOrBlack(){
 
     if (blueOrBlack === 0){
-        headTwo.textContent = "Clicked on";
+        headTwo.textContent = "Clicked on - click again";
         headTwo.style.color = "blue";
         return 1
     }else if(blueOrBlack === 1){
@@ -38,5 +38,6 @@ blueOrBlack = changeBluOrBlack()
 
 // double click
 headThree.addEventListener('dblclick',function(){
-    headThree.textContent = "This was double clicked"
+    headThree.textContent = "This was double clicked";
+    headThree.style.color = "orange";
 })
