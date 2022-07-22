@@ -7,10 +7,30 @@ var boxsix = document.querySelector("#b6");
 var boxseven = document.querySelector("#b7");
 var boxeight = document.querySelector("#b8");
 var boxnine = document.querySelector("#b9");
+var playerTurnH2 =document.querySelector("#currentplayer")
+
+var markValue = 2;
+
+function mark(){
+    if (markValue % 2 == 0){
+        markValue += 1;
+        playerTurnH2.textContent = "It's player 2's turn (O)"
+        return "X"
+    }else{
+        markValue += 1;
+        playerTurnH2.textContent = "It's player 1's turn (X)"
+        return "O"
+    }
+}
 
 // SQUARE ONE
 boxone.addEventListener("mouseover",function(){
     boxone.style.backgroundColor = "green";
+    boxone.addEventListener("click",function(){
+        if (boxone.textContent === " "){
+        boxone.textContent = mark()
+        }
+    })
 })
 boxone.addEventListener("mouseout",function(){
     boxone.style.backgroundColor = "#d4d4d4";
@@ -19,6 +39,11 @@ boxone.addEventListener("mouseout",function(){
 // SQUARE TWO
 boxtwo.addEventListener("mouseover",function(){
     boxtwo.style.backgroundColor = "green";
+        boxtwo.addEventListener("click",function(){
+            if (boxtwo.textContent === " "){
+            boxtwo.textContent = mark()
+        }
+    })
 })
 boxtwo.addEventListener("mouseout",function(){
     boxtwo.style.backgroundColor = "#d4d4d4";
@@ -28,6 +53,11 @@ boxtwo.addEventListener("mouseout",function(){
 // SQUARE THREE
 boxthree.addEventListener("mouseover",function(){
     boxthree.style.backgroundColor = "green";
+    boxthree.addEventListener("click",function(){
+            if (boxthree.textContent === " "){
+            boxthree.textContent = mark()
+        }
+    })
 })
 boxthree.addEventListener("mouseout",function(){
     boxthree.style.backgroundColor = "#d4d4d4";
@@ -37,6 +67,11 @@ boxthree.addEventListener("mouseout",function(){
 // SQUARE FOUR
 boxfour.addEventListener("mouseover",function(){
     boxfour.style.backgroundColor = "green";
+    boxfour.addEventListener("click",function(){
+        if (boxfour.textContent === " "){
+        boxfour.textContent = mark()
+        }
+    })
 })
 boxfour.addEventListener("mouseout",function(){
     boxfour.style.backgroundColor = "#d4d4d4";
@@ -46,6 +81,11 @@ boxfour.addEventListener("mouseout",function(){
 // SQUARE FIVE
 boxfive.addEventListener("mouseover",function(){
     boxfive.style.backgroundColor = "green";
+    boxfive.addEventListener("click",function(){
+        if (boxfive.textContent === " "){
+        boxfive.textContent = mark()
+        }
+    })
 })
 boxfive.addEventListener("mouseout",function(){
     boxfive.style.backgroundColor = "#d4d4d4";
@@ -55,6 +95,11 @@ boxfive.addEventListener("mouseout",function(){
 // SQUARE SIX
 boxsix.addEventListener("mouseover",function(){
     boxsix.style.backgroundColor = "green";
+    boxsix.addEventListener("click",function(){
+        if (boxsix.textContent === " "){
+        boxsix.textContent = mark()
+        }
+    })
 })
 boxsix.addEventListener("mouseout",function(){
     boxsix.style.backgroundColor = "#d4d4d4";
@@ -64,6 +109,11 @@ boxsix.addEventListener("mouseout",function(){
 // SQUARE SEVEN
 boxseven.addEventListener("mouseover",function(){
     boxseven.style.backgroundColor = "green";
+    boxseven.addEventListener("click",function(){
+        if (boxseven.textContent === " "){
+        boxseven.textContent = mark()
+        }
+    })
 })
 boxseven.addEventListener("mouseout",function(){
     boxseven.style.backgroundColor = "#d4d4d4";
@@ -73,6 +123,11 @@ boxseven.addEventListener("mouseout",function(){
 // SQUARE EIGHT
 boxeight.addEventListener("mouseover",function(){
     boxeight.style.backgroundColor = "green";
+    boxeight.addEventListener("click",function(){
+        if (boxeight.textContent === " "){
+        boxeight.textContent = mark()
+        }
+    })
 })
 boxeight.addEventListener("mouseout",function(){
     boxeight.style.backgroundColor = "#d4d4d4";
@@ -82,6 +137,11 @@ boxeight.addEventListener("mouseout",function(){
 // SQUARE NINE
 boxnine.addEventListener("mouseover",function(){
     boxnine.style.backgroundColor = "green";
+    boxnine.addEventListener("click",function(){
+        if (boxnine.textContent === " "){
+        boxnine.textContent = mark()
+        }
+    })
 })
 boxnine.addEventListener("mouseout",function(){
     boxnine.style.backgroundColor = "#d4d4d4";

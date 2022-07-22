@@ -7,6 +7,10 @@ h1{
     font-size: 90%;
 }
 
+h2{
+    font-size: 90%;
+}
+
 table{
     margin: auto;
     margin-top: 60px;
@@ -19,6 +23,8 @@ a{
 
 td{
     background-color: #d4d4d4;
+    width: 30%;
+    height: 30%;
 }
 
 .grayout{
