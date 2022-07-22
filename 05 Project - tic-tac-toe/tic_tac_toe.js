@@ -11,6 +11,8 @@ var playerTurnH2 = document.querySelector("#currentplayer")
 
 var resBut = document.querySelector("#reset")
 var allBox = document.getElementsByTagName("td")
+var boxitems = allBox.HTMLCollection
+var clearText = " ";
 
 var markValue = 2;
 
@@ -154,12 +156,12 @@ boxnine.addEventListener("mouseout",function(){
 resBut.addEventListener("mouseover",function(){
     resBut.style.backgroundColor = "green";
     resBut.addEventListener("click",function(){
-        for (var item in resBut){
-        item.textContent = " "
-        }
+        console.log(allBox.HTMLCollection.namedItem("innerText"))
     })
 })
 
 resBut.addEventListener("mouseout",function(){
     resBut.style.backgroundColor = "#d4d4d4";
 })
+
+// [0].innerHTML
