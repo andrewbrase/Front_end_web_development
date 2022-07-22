@@ -7,7 +7,10 @@ var boxsix = document.querySelector("#b6");
 var boxseven = document.querySelector("#b7");
 var boxeight = document.querySelector("#b8");
 var boxnine = document.querySelector("#b9");
-var playerTurnH2 =document.querySelector("#currentplayer")
+var playerTurnH2 = document.querySelector("#currentplayer")
+
+var resBut = document.querySelector("#reset")
+var allBox = document.getElementsByTagName("td")
 
 var markValue = 2;
 
@@ -145,4 +148,18 @@ boxnine.addEventListener("mouseover",function(){
 })
 boxnine.addEventListener("mouseout",function(){
     boxnine.style.backgroundColor = "#d4d4d4";
+})
+
+// RESET BUTTON
+resBut.addEventListener("mouseover",function(){
+    resBut.style.backgroundColor = "green";
+    resBut.addEventListener("click",function(){
+        for (var item in resBut){
+        item.textContent = " "
+        }
+    })
+})
+
+resBut.addEventListener("mouseout",function(){
+    resBut.style.backgroundColor = "#d4d4d4";
 })
