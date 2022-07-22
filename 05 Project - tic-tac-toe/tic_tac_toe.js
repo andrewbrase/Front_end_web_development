@@ -9,10 +9,8 @@ var boxeight = document.querySelector("#b8");
 var boxnine = document.querySelector("#b9");
 var playerTurnH2 = document.querySelector("#currentplayer")
 
-// var resBut = document.querySelector("#reset")
-// var allBox = document.getElementsByTagName("td")
-// var boxitems = allBox.HTMLCollection
-// var clearText = " ";
+var resBut = document.querySelector("#reset")
+var allBox = document.getElementsByTagName("td")
 
 var markValue = 2;
 
@@ -27,6 +25,26 @@ function mark(){
         return "O"
     }
 }
+
+// RESET BUTTON
+
+function clearBoard(){
+    for (var i = 0; i < allBox.length; i++){
+        allBox[i].textContent = " ";
+    }
+}
+
+resBut.addEventListener("mouseover",function(){
+    resBut.style.backgroundColor = "green";
+    resBut.addEventListener("click",function(){
+        clearBoard()
+    })
+})
+
+resBut.addEventListener("mouseout",function(){
+    resBut.style.backgroundColor = "#d4d4d4";
+})
+
 
 // SQUARE ONE
 boxone.addEventListener("mouseover",function(){
@@ -151,18 +169,3 @@ boxnine.addEventListener("mouseover",function(){
 boxnine.addEventListener("mouseout",function(){
     boxnine.style.backgroundColor = "#d4d4d4";
 })
-
-// RESET BUTTON
-// resBut.addEventListener("mouseover",function(){
-//     resBut.style.backgroundColor = "green";
-//     resBut.addEventListener("click",function(){
-//         for (item in allBox){
-//             item.textContent = " "
-//             console.log(item)
-//         }
-//     })
-// })
-
-// resBut.addEventListener("mouseout",function(){
-//     resBut.style.backgroundColor = "#d4d4d4";
-// })
