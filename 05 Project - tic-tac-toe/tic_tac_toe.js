@@ -156,7 +156,10 @@ boxnine.addEventListener("mouseout",function(){
 resBut.addEventListener("mouseover",function(){
     resBut.style.backgroundColor = "green";
     resBut.addEventListener("click",function(){
-        console.log(allBox.HTMLCollection.namedItem("innerText"))
+        for (item in allBox){
+            item.textContent = " "
+            console.log(item)
+        }
     })
 })
 
