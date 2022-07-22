@@ -16,8 +16,9 @@ table{
 a{
     margin-top: 60px;
 }
+
 td{
-    background-color: rgb(180, 180, 180);
+    background-color: #d4d4d4;
 }
 
 .grayout{
